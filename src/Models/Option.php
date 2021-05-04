@@ -1,6 +1,6 @@
 <?php
 
-namespace Connonsir\MorphSku\Models;
+namespace FsgHerbie\MorphSku\Models;
 
 use Connonsir\MorphSku\Contracts\OptionContract;
 use Illuminate\Database\Eloquent\Model;
