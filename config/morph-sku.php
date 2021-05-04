@@ -31,24 +31,24 @@ return [
      */
     'models' => [
         /*
-         * sku模型，需实现 Connonsir\MorphSku\Contracts\SkuContract
+         * sku模型，需实现 FsgHerbie\MorphSku\Contracts\SkuContract
          */
-        'Sku' => \Connonsir\MorphSku\Models\Sku::class,
+        'Sku' => \FsgHerbie\MorphSku\Models\Sku::class,
 
         /*
-         * 选项模型，需实现 Connonsir\MorphSku\Contracts\OptionContract
+         * 选项模型，需实现 FsgHerbie\MorphSku\Contracts\OptionContract
          */
-        'Option' => \Connonsir\MorphSku\Models\Option::class,
+        'Option' => \FsgHerbie\MorphSku\Models\Option::class,
 
         /*
          * 属性值模型,需实现 Connonsir\MorphSku\Contracts\AttrContract
          */
-        'Attr' => \Connonsir\MorphSku\Models\Attr::class,
+        'Attr' => \FsgHerbie\MorphSku\Models\Attr::class,
 
         /*
          * 属性与SKU多对多中间模型
          */
-        'AttrSku' => \Connonsir\MorphSku\Models\AttrSku::class,
+        'AttrSku' => \FsgHerbie\MorphSku\Models\AttrSku::class,
     ],
 
     /*
