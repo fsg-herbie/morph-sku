@@ -1,6 +1,6 @@
 <?php
 
-namespace Connonsir\MorphSku\Models;
+namespace FsgHerbie\MorphSku\Models;
 
 use Illuminate\Database\Eloquent\Relations\Pivot;
 
