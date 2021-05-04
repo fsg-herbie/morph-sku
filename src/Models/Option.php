@@ -2,7 +2,7 @@
 
 namespace FsgHerbie\MorphSku\Models;
 
-use Connonsir\MorphSku\Contracts\OptionContract;
+use FsgHerbie\MorphSku\Contracts\OptionContract;
 use Illuminate\Database\Eloquent\Model;
 
 class Option extends Model implements OptionContract
