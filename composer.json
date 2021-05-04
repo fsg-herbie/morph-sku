@@ -1,17 +1,17 @@
 {
-    "name": "connonsir/morph-sku",
+    "name": "fsg-herbie/morph-sku",
     "description": "morph-sku",
     "type": "library",
     "authors": [
         {
-            "name": "jianong",
-            "email": "jianonghe@gmail.com"
+            "name": "fsg-herbie",
+            "email": "280684602@qq.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Connonsir\\MorphSku\\ServiceProvider"
+                "FsgHerbie\\MorphSku\\ServiceProvider"
             ]
         }
     },
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Connonsir\\MorphSku\\": "src"
+            "FsgHerbie\\MorphSku\\": "src"
         }
     }
 }
