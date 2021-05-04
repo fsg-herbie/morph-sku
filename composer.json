@@ -2,6 +2,7 @@
     "name": "fsg-herbie/morph-sku",
     "description": "morph-sku",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "fsg-herbie",
