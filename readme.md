@@ -16,7 +16,7 @@
 **引入**
 
 ```bash
-composer require cannonsir/morph-sku
+composer require fsg-herbie/morph-sku
 ```
 
 **发布迁移文件**
@@ -43,7 +43,7 @@ php artisan vendor:publish --tag=morph-sku-config
 
 ```php
 use Illuminate\Database\Eloquent\Model;
-use CannonSir\MorphSku\Traits\HasSku;
+use FsgHerbie\MorphSku\Traits\HasSku;
 
 class Product extends Model
 {
@@ -56,7 +56,7 @@ class Product extends Model
 **选项新增**
 
 ```php
-use CannonSir\MorphSku\Models\Option;
+use FsgHerbie\MorphSku\Models\Option;
 Option::create(['name' => '尺寸']);
 ```
 
@@ -137,7 +137,7 @@ $product->skus()->delete();
 **通过属性值组合获取SKU**
 
 ```php
-use CannonSir\MorphSku\Models\Sku;
+use FsgHerbie\MorphSku\Models\Sku;
 Sku::findByPosition([$attr1, $attr2, $attr3])
 ```
 
