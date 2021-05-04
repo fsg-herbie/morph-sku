@@ -1,9 +1,9 @@
 <?php
 
-namespace Connonsir\MorphSku\Models;
+namespace FsgHerbie\MorphSku\Models;
 
-use Connonsir\MorphSku\Contracts\AttrContract;
-use Connonsir\MorphSku\Contracts\SkuContract;
+use FsgHerbie\MorphSku\Contracts\AttrContract;
+use FsgHerbie\MorphSku\Contracts\SkuContract;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
