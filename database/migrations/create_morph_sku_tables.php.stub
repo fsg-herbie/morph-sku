@@ -10,23 +10,23 @@ class CreateMorphSkuTables extends Migration
     {
         $tableNames = config('morph-sku.table_names');
 
-        Schema::create($tableNames['skus'], function (Blueprint $table) {
+        Schema::create($tableNames['skus'], function (Blueprint $table) use ($tableNames) {
             $table->bigIncrements('id');
-            $table->morphs('producible');
+            $table->morphs($tableNames['morph_name']);
             $table->decimal('amount');
             $table->unsignedInteger('stock');
             $table->timestamps();
         });
 
-        Schema::create($tableNames['options'], function (Blueprint $table) {
+        Schema::create($tableNames['options'], function (Blueprint $table){
             $table->bigIncrements('id');
             $table->string('name')->unique();
             $table->timestamps();
         });
 
-        Schema::create($tableNames['attrs'], function (Blueprint $table) {
+        Schema::create($tableNames['attrs'], function (Blueprint $table) use ($tableNames) {
             $table->bigIncrements('id');
-            $table->morphs('producible');
+            $table->morphs($tableNames['morph_name']);
             $table->unsignedBigInteger('option_id')->index();
             $table->string('value');
             $table->timestamps();
