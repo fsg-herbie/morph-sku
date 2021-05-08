@@ -12,6 +12,8 @@ class Attr extends Model implements AttrContract
 {
     protected $guarded = ['id'];
 
+    protected $fillable = ["shops_goods_type","shops_goods_id","option_id","value"];
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);

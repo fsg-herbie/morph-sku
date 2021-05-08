@@ -9,6 +9,8 @@ class Option extends Model implements OptionContract
 {
     protected $guarded = ['id'];
 
+    protected $fillable = ["name"];
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);

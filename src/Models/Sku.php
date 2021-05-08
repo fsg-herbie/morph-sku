@@ -13,6 +13,8 @@ class Sku extends Model implements SkuContract
 {
     protected $guarded = ['id'];
 
+    protected $fillable = ["shops_goods_type","shops_goods_id","image","original_price","sale_price","proxy_price","stock"];
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);

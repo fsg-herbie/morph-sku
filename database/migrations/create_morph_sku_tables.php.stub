@@ -13,8 +13,11 @@ class CreateMorphSkuTables extends Migration
         Schema::create($tableNames['skus'], function (Blueprint $table) use ($tableNames) {
             $table->bigIncrements('id');
             $table->morphs($tableNames['morph_name']);
-            $table->decimal('amount');
-            $table->unsignedInteger('stock');
+            $table->string('image')->nullable();
+            $table->decimal('original_price')->nullable();
+            $table->decimal('sale_price')->nullable();
+            $table->decimal('proxy_price')->nullable();
+            $table->unsignedInteger('stock')->nullable();
             $table->timestamps();
         });
 
